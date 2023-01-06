@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     host: 'smtp.elasticemail.com',
-
     port: 2525,
 
     auth: {
