@@ -34,12 +34,21 @@ module.exports = (req, resp) => {
         const emailConfig2 = {
             from:'no-reply@ikorepilates.com',
             to: [mailId],
-            subject: `Ikore Pilates : Thank you for Registration`,
+            subject: `iKore Pilates : Thank you for Registration`,
             //text: `Thank you for contacting us. We will get back to you soon`,
             html:`<p>Dear ${name}</p>
             
-            <b>Thank you for email. Our team will get in touch with you shortly.</b>`
-        
+            <span>Thank you for showing interest. Our team will get in touch with you shortly.</span>
+
+
+            <br></br>
+            <br></br>
+
+            <p>Thanks</p>
+            <p>Team iKore</p>`
+
+
+            
             
         }
         transporter.sendMail(emailConfig, (error, info) => {
